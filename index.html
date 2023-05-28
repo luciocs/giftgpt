@@ -12,6 +12,8 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column;
+            padding: 20px;
         }
 
         h1 {
@@ -22,14 +24,48 @@
         p {
             font-size: 1.5em;
             color: #6C757D;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
+        <img class="logo" src="GiftGPT - logo.png" alt="Logo da GiftGPT">
         <h1>GiftGPT</h1>
-        <p>Transformando Palavras em Presentes Perfeitos. Em breve!</p>
+        <p>Bem-vindo à GiftGPT, onde transformamos suas ideias em presentes personalizados. Com apenas um prompt de texto, nossa IA cria designs únicos para canecas, camisetas e muito mais.</p>
+        <p>Estamos trabalhando para trazer a você uma experiência de personalização como nenhuma outra. Fique ligado!</p>
+        <p>Inscreva-se para ser o primeiro a saber quando lançarmos e receber novidades exclusivas.</p>
+        <form>
+            <input type="email" placeholder="Seu email" required>
+            <button type="submit">Inscrever</button>
+        </form>
     </div>
 </body>
 </html>
