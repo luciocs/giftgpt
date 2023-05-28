@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
     <style>
         body {
-            background: #007BFF;
-            color: #fff;
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -32,7 +30,6 @@
 
         p {
             font-size: 1.5em;
-            color: #fff;
             text-align: center;
         }
 
@@ -71,25 +68,52 @@
 
         .product p {
             text-align: center;
+        }
+
+        .section {
+            padding: 50px;
+        }
+
+        .blue-bg {
+            background-color: #007BFF;
+            color: #FFFFFF;
+        }
+
+        .white-bg {
+            background-color: #FFFFFF;
+            color: #007BFF;
+        }
+
+        .grey-bg {
+            background-color: #6C757D;
             color: #FFFFFF;
         }
     </style>
 </head>
 <body>
-    <div class="container text-center">
+    <div class="section blue-bg text-center">
         <img class="logo" src="GiftGPT - logo.png" alt="Logo da GiftGPT">
         <h1>GiftGPT</h1>
-        <p>Bem-vindo à GiftGPT, onde transformamos suas ideias em presentes personalizados. Com apenas um prompt de texto, nossa IA cria designs únicos para canecas, camisetas e muito mais.</p>
+        <p>Bem-vindo à GiftGPT, onde transformamos suas ideias em presentes personalizados.</p>
+    </div>
+    <div class="section white-bg text-center">
+        <p>Com apenas um prompt de texto, nossa IA cria designs únicos para canecas, camisetas e muito mais.</p>
         <p>Estamos trabalhando para trazer a você uma experiência de personalização como nenhuma outra. Fique ligado!</p>
+    </div>
+    <div class="section grey-bg text-center">
+        <p>Inscreva-se para ser o primeiro a saber quando lançarmos e receber novidades exclusivas.</p>
         <form class="d-flex flex-column align-items-center">
             <input type="email" class="form-control" placeholder="Seu email" required>
             <button type="submit" class="btn btn-primary mt-3">Inscrever</button>
         </form>
-        <div class="product">
+    </div>
+    <div class="section white-bg">
+        <h2 class="text-center">Exemplos de Produtos</h2>
+        <div class="product d-flex flex-column align-items-center">
             <img src="produto1.png" alt="Produto 1">
             <p>Descrição do Produto 1</p>
         </div>
-        <div class="product">
+        <div class="product d-flex flex-column align-items-center">
             <img src="produto2.png" alt="Produto 2">
             <p>Descrição do Produto 2</p>
         </div>
